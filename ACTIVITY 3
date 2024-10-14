@@ -1,0 +1,141 @@
+using System;
+
+namespace Car_Brands
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Cars;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.Clear();
+            Console.WriteLine("\n\nWELCOME TO ABC CAR DEALERSHIP");
+            Console.WriteLine("\nChoose a car brand:");
+            Console.Write("1. Toyota - P 1,500,000 \n2. Honda -  P 1,200,000 \n3. Ford -   P 2,300,000 \n4. BMW -    P 2,5000,000 \n5.Mercedes - P 3,000,000");
+            Console.Write("\n\nEnter the number of your chosen car brand: ");
+            Cars = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("");
+            if (Cars == 1)
+            {
+                Console.WriteLine("You selected: Toyota");
+                Console.WriteLine("Price: P 1,500,000.00");
+                Console.Write("Do you want to purchase this car? (Y/N): ");
+                String Answers = Convert.ToString(Console.ReadLine());
+                if (Answers == "Y")
+                {
+                    Double sub = (1500000 * .30);
+                    Console.WriteLine("Down payment (30%): {0:n2}", sub);
+
+                    Double balance = 1500000 - sub;
+                    Console.WriteLine("\nRemaining Balance: {0:n2}", balance);
+
+                    Double installment = balance / 60;
+                    Console.WriteLine("\nMonthly Installment (for 5 years): {0:n2}", installment);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine("Thank you!");
+                    Console.ReadLine() ;
+                }
+            }
+            else if (Cars == 2)
+            {
+                Console.WriteLine("You selected: Honda");
+                Console.WriteLine("Price: P 1,200,000.00");
+                Console.Write("Do you want to purchase this car? (Y/N): ");
+                String Answers = Convert.ToString(Console.ReadLine());
+                if (Answers == "Y")
+                {
+                    Double sub = (1200000 * .30);
+                    Console.WriteLine("Down payment (30%): {0:n2}", sub);
+
+                    Double balance = 1200000 - sub;
+                    Console.WriteLine("\nRemaining Balance: {0:n2}", balance);
+
+                    Double installment = balance / 60;
+                    Console.WriteLine("\nMonthly Installment (for 5 years): {0:n2}", installment);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine("Thank you!");
+                    Console.ReadLine();
+                }
+            }
+            else if (Cars == 3)
+            {
+                Console.WriteLine("You selected: Ford");
+                Console.WriteLine("Price: P 2,300,000.00");
+                Console.Write("Do you want to purchase this car? (Y/N): ");
+                String Answers = Convert.ToString(Console.ReadLine());
+                if (Answers == "Y")
+                {
+                    Double sub = (2300000 * .30);
+                    Console.WriteLine("Down payment (30%): {0:n2}", sub);
+
+                    Double balance = 2300000 - sub;
+                    Console.WriteLine("\nRemaining Balance: {0:n2}", balance);
+
+                    Double installment = balance / 60;
+                    Console.WriteLine("\nMonthly Installment (for 5 years): {0:n2}", installment);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine("Thank you!");
+                    Console.ReadLine();
+                }
+            }
+            else if (Cars == 4)
+            {
+                Console.WriteLine("You selected: BMW");
+                Console.WriteLine("Price: P 2,500,000.00");
+                Console.Write("Do you want to purchase this car? (Y/N): ");
+                String Answers = Convert.ToString(Console.ReadLine());
+                if (Answers == "Y")
+                {
+                    Double sub = (2500000 * .30);
+                    Console.WriteLine("Down payment (30%): {0:n2}", sub);
+
+                    Double balance = 2500000 - sub;
+                    Console.WriteLine("\nRemaining Balance: {0:n2}", balance);
+
+                    Double installment = balance / 60;
+                    Console.WriteLine("\nMonthly Installment (for 5 years): {0:n2}", installment);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine("Thank you!");
+                    Console.ReadLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("You selected: Mercedes");
+                Console.WriteLine("Price: P 3,000,000.00");
+                Console.Write("Do you want to purchase this car? (Y/N): ");
+                String Answers = Convert.ToString(Console.ReadLine());
+                if (Answers == "Y")
+                {
+                    Double sub = (3000000 * .30);
+                    Console.WriteLine("Down payment (30%): {0:n2}", sub);
+
+                    Double balance = 3000000 - sub;
+                    Console.WriteLine("\nRemaining Balance: {0:n2}", balance);
+
+                    Double installment = balance / 60;
+                    Console.WriteLine("\nMonthly Installment (for 5 years): {0:n2}", installment);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine("Thank you!");
+                    Console.ReadLine();
+                }
+            }
+            Console.ReadKey(true);
+        }
+    }
+}
